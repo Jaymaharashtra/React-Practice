@@ -1,0 +1,24 @@
+{/<table border="1" style={{ margin: "20px" }}>
+<thead>
+  <tr>
+    <td>Id</td>
+    <td>Name</td>
+    <td>Mobile</td>
+    <td>City</td>
+    <td>State</td>
+  </tr>
+</thead>
+<tbody>
+
+  {
+        <tr key={users.id}>
+      <td>{users.id}</td>
+      <td>{users.name}</td>
+      <td>{users.Mobile}</td>
+      <td>{users.City}</td>
+      <td>{users.State}</td>
+    </tr>
+}
+  
+</tbody>
+</table> }

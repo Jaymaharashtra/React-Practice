@@ -1,3 +1,5 @@
+import Tables from "./tables";
+
 // import Table from "./tables"
 
 function App() {
@@ -33,34 +35,14 @@ function App() {
   ];
   return (
     <>
-      <table border="1" style={{ margin: "20px" }}>
-        <thead>
-          <tr>
-            <td>Id</td>
-            <td>Name</td>
-            <td>Mobile</td>
-            <td>City</td>
-            <td>State</td>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            user.map((item)=>{
-              return(
+    {
+      user.map((user)=>(
+        <div key={user.id}>
 
-                <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.name}</td>
-              <td>{item.Mobile}</td>
-              <td>{item.City}</td>
-              <td>{item.State}</td>
-            </tr>
-            );
-            })
-            }
-          
-        </tbody>
-      </table>
+        <Tables data ={user} />
+        </div>
+      ))
+    }
     </>
   );
 }
