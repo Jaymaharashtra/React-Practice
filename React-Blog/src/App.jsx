@@ -39,7 +39,7 @@ function App() {
       user.map((user)=>(
         <div key={user.id}>
 
-        <Tables data ={user} />
+        <Tables  data ={user} />
         </div>
       ))
     }
