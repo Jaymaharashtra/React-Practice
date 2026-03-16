@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Header from "./assets/component/Header";
 import Footer from "./assets/component/Footer";
-import Page1 from "./assets/component/Page1";
-import Radio from "./assets/component/radio";
-import Record from "./assets/component/Record";
+
+import Clock from "./assets/component/Clock";
 
 const App = () => {
 
@@ -11,9 +10,7 @@ const App = () => {
   return (
     <div>
       <Header/>
-      <Page1 />
-      {/* <Radio /> */}
-      <Record />
+     <Clock />
       <Footer/>
     </div>
   );
