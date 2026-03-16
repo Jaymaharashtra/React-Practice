@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+h1{
+  background-color: rgb(110, 74, 74);
+}
+button{
+  padding: 50px;
+  background-color: khaki;
+  color: rgb(250, 248, 253);
+}
+
+Footer{
+  position: absolute;
+  bottom: 100%;
+}
+.page1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
