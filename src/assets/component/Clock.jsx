@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Clock = ()=>{
+const Clock = ({color})=>{
     const [time, setDate] = useState(0);
    
     useEffect(()=>{
@@ -13,7 +13,7 @@ const Clock = ()=>{
         <>
          <div className="container">
           <h1 
-          style={{color:'red',backgroundColor:'darkslategrey', width:'120px', padding:'10px',borderRadius:'9px'}}
+          style={{color:color,backgroundColor:'darkslategrey', width:'120px', padding:'10px',borderRadius:'9px'}}
           >{time}</h1>
          </div>
         </>
